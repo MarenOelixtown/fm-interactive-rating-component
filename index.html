@@ -40,14 +40,19 @@
         <label for="five">5</label>
         <button type="submit">Submit</button>
       </form>
-      <!-- Thank you state start -->
-
-      You selected
-      <!-- Add rating here -->
-      out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch!
-
-      <!-- Thank you state end -->
+      <dialog
+        data-js="selected-dialog"
+        aria-modal="true"
+        aria-labelledby="selected_message"
+        open
+      >
+        <h2 id="selected_message">You selected <span>x</span> out of 5</h2>
+        <p>Thank you!</p>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </dialog>
     </main>
   </body>
 </html>
