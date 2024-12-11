@@ -50,8 +50,27 @@ body {
   min-height: 100vh;
   background-color: var(--cle-neutral-black);
   color: var(--clr-neutral-light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-dialog {
+main {
+}
+.rating-form {
+  max-width: 25.75rem;
+}
+.background--dark-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 100%
+  );
+}
+.dialog {
   border: none;
   color: inherit;
+  max-width: 25.75rem;
+  margin: auto;
+}
+.dialog::backdrop {
 }
