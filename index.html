@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -14,39 +13,47 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <meta
+      name="description"
+      content="My Frontend Mentor - challenge is to build out this interactive rating component and get it looking as close to the design as possible."
+    />
   </head>
   <body>
-    <!-- Rating state start -->
-
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main>
+      <h1 class="sr-only">Interactive rating component</h1>
+      <form action="" method="post">
+        <img src="./images/icon-star.svg" alt="" />
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <input type="radio" id="one" name="support-rating" value="1" />
+        <label for="one">1</label>
+        <input type="radio" id="two" name="support-rating" value="2" />
+        <label for="two">2</label>
+        <input type="radio" id="three" name="support-rating" value="3" />
+        <label for="three">3</label>
+        <input type="radio" id="four" name="support-rating" value="4" />
+        <label for="four">4</label>
+        <input type="radio" id="five" name="support-rating" value="5" />
+        <label for="five">5</label>
+        <button type="submit">Submit</button>
+      </form>
+      <dialog
+        data-js="selected-dialog"
+        aria-modal="true"
+        aria-labelledby="selected_message"
+        open
+      >
+        <img src="./images/illustration-thank-you.svg" alt="" />
+        <h2 id="selected_message">You selected <span>x</span> out of 5</h2>
+        <p>Thank you!</p>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </dialog>
+    </main>
   </body>
 </html>
