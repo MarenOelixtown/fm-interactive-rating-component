@@ -30,6 +30,7 @@ html {
   --fw-regular: 400;
   --fw-bold: 700;
   --clr-primary-orange: #fb7413;
+  --cle-neutral-black: #1e1e1e;
   --clr-neutral-white: #ffffff;
   --clr-neutral-light-grey: #959eac;
   --clr-neutral-dark-blue: #252d37;
@@ -44,7 +45,13 @@ html {
   white-space: nowrap;
 }
 body {
-  font-family: var(--ff-basis);
+  font-family: var(--ff-basic);
   font-weight: var(--fw-regular);
   min-height: 100vh;
+  background-color: var(--cle-neutral-black);
+  color: var(--clr-neutral-light-grey);
+}
+dialog {
+  border: none;
+  color: inherit;
 }
