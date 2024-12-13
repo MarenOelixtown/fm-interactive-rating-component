@@ -49,20 +49,30 @@ body {
   font-weight: var(--fw-regular);
   font-size: 0.9rem;
   min-height: 100vh;
-  background-color: var(--clr-neutral-black);
+  background-color: var(--clr-neutral-white);
   color: var(--clr-neutral-light-grey);
 }
-main {
-}
+
 .item--center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .container--styling {
-  background: radial-gradient(circle, #232a34 0%, #181e27 100%);
+  background-image: radial-gradient(
+    97% 75% at 66% 1%,
+    #232a34 0%,
+    #181e27 100%
+  );
   border-radius: 30px;
   padding: 2.1rem;
+  margin: 0 1.5rem;
+}
+.text--bold {
+  color: var(--clr-neutral-white);
+  font-size: 1.75rem;
+  font-weight: var(--fw-bold);
+  margin: 2rem 0 1rem 0;
 }
 .rating-form {
   max-width: 25.75rem;
@@ -72,12 +82,6 @@ main {
   height: 3rem;
   background-color: var(--clr-neutral-dark-blue);
   border-radius: 50%;
-}
-.text--bold {
-  color: var(--clr-neutral-white);
-  font-size: 1.75rem;
-  font-weight: var(--fw-bold);
-  margin: 2rem 0 1rem 0;
 }
 .rating-form__description {
   line-height: 1.5rem;
@@ -141,7 +145,6 @@ main {
   border: none;
   color: inherit;
   max-width: 25.75rem;
-  margin: auto;
   text-align: center;
 }
 .dialog__selected-message {
@@ -160,4 +163,10 @@ main {
 }
 .dialog::backdrop {
   background: var(--clr-neutral-black);
+}
+
+@media (min-width: 28.875em) {
+  .dialog {
+    margin: auto;
+  }
 }
