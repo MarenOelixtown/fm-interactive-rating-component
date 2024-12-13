@@ -110,6 +110,15 @@ main {
   height: 100%;
   cursor: pointer;
 }
+.rating-fieldset label:has(input:focus-visible),
+.rating-fieldset label:has(input:hover) {
+  background-color: var(--clr-primary-orange);
+  color: var(--clr-neutral-dark-blue);
+}
+.rating-fieldset label:has(input:checked) {
+  background-color: var(--clr-neutral-white);
+  color: var(--clr-neutral-dark-blue);
+}
 .dialog {
   border: none;
   color: inherit;
