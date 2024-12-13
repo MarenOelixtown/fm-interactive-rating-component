@@ -123,6 +123,24 @@ main {
 .rating-fieldset label:has(input:active) {
   font-size: 1.5rem;
 }
+.button-submit {
+  min-width: 100%;
+  border: none;
+  border-radius: 22.5px;
+  cursor: pointer;
+  color: var(--clr-neutral-very-dark-blue);
+  letter-spacing: 0.13rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  background-color: var(--clr-primary-orange);
+  padding: 1rem;
+}
+.button-submit:hover {
+  background-color: var(--clr-neutral-white);
+}
+.button-submit:active {
+  font-size: 1rem;
+}
 .dialog {
   border: none;
   color: inherit;
