@@ -47,6 +47,7 @@ html {
 body {
   font-family: var(--ff-basic);
   font-weight: var(--fw-regular);
+  font-size: 0.9rem;
   min-height: 100vh;
   background-color: var(--cle-neutral-black);
   color: var(--clr-neutral-light-grey);
@@ -84,6 +85,10 @@ main {
   color: var(--clr-neutral-white);
   font-size: 1.75rem;
   font-weight: var(--fw-bold);
+}
+.rating-fieldset__description {
+  line-height: 1.5rem;
+  margin: 1rem 0;
 }
 .dialog {
   border: none;
