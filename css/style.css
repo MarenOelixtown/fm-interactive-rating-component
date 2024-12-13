@@ -3,7 +3,7 @@
   font-family: "Overpass";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/overpass-v16-latin-regular.woff2") format("woff2");
+  src: url("../assets/fonts/overpass-v16-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: "Overpass";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/overpass-v16-latin-700.woff2") format("woff2");
+  src: url("../assets/fonts/overpass-v16-latin-700.woff2") format("woff2");
 }
 
 html {
