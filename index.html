@@ -21,12 +21,12 @@
   <body>
     <main>
       <h1 class="sr-only">Interactive rating component</h1>
-      <form
-        class="rating-form background--dark-gradient"
-        action=""
-        method="post"
-      >
-        <img src="./assets/images/icon-star.svg" alt="" />
+      <form class="rating-form container--styling" action="" method="post">
+        <img
+          class="rating-form__star-icon"
+          src="./assets/images/icon-star.svg"
+          alt=""
+        />
         <fieldset>
           <legend>How did we do?</legend>
           <p>
@@ -47,7 +47,7 @@
         <button type="submit">Submit</button>
       </form>
       <dialog
-        class="dialog background--dark-gradient"
+        class="dialog container--styling"
         data-js="selected-dialog"
         aria-modal="true"
         aria-labelledby="selected_message"

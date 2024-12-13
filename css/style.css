@@ -56,15 +56,18 @@ body {
 }
 main {
 }
-.rating-form {
-  max-width: 25.75rem;
-}
-.background--dark-gradient {
+.container--styling {
   background: radial-gradient(
     circle,
     rgba(35, 42, 52, 1) 0%,
     rgba(24, 30, 39, 1) 100%
   );
+  border-radius: 30px;
+}
+.rating-form {
+  max-width: 25.75rem;
+}
+.rating-form__star-icon {
 }
 .dialog {
   border: none;
