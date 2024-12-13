@@ -77,18 +77,18 @@ main {
   background-color: var(--clr-neutral-dark-blue);
   border-radius: 50%;
 }
-.rating-fieldset {
-  border: none;
-  margin: 2rem 0;
-}
 .heading--bold {
   color: var(--clr-neutral-white);
   font-size: 1.75rem;
   font-weight: var(--fw-bold);
+  margin: 2rem 0 1rem 0;
 }
-.rating-fieldset__description {
+.rating-form__description {
   line-height: 1.5rem;
-  margin: 1rem 0;
+}
+.rating-fieldset {
+  border: none;
+  margin: 2rem 0;
 }
 .dialog {
   border: none;
