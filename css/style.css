@@ -60,11 +60,7 @@ main {
   align-items: center;
 }
 .container--styling {
-  background: radial-gradient(
-    circle,
-    rgba(35, 42, 52, 1) 0%,
-    rgba(24, 30, 39, 1) 100%
-  );
+  background: radial-gradient(circle, #232a34 0%, #181e27 100%);
   border-radius: 30px;
   padding: 2.1rem;
 }
@@ -77,7 +73,7 @@ main {
   background-color: var(--clr-neutral-dark-blue);
   border-radius: 50%;
 }
-.heading--bold {
+.text--bold {
   color: var(--clr-neutral-white);
   font-size: 1.75rem;
   font-weight: var(--fw-bold);
@@ -146,6 +142,21 @@ main {
   color: inherit;
   max-width: 25.75rem;
   margin: auto;
+  text-align: center;
+}
+.dialog__selected-message {
+  color: var(--clr-primary-orange);
+  font-weight: var(--fw-regular);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  background-color: var(--clr-neutral-dark-blue);
+  border-radius: 22.5px;
+  max-width: 193px;
+  margin: 1.5rem auto 0 auto;
+  padding: 0.4rem 0;
+}
+.dialog__description {
+  line-height: 1.5;
 }
 .dialog::backdrop {
 }

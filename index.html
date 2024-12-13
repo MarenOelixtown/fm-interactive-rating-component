@@ -30,7 +30,7 @@
             height="16"
           />
         </div>
-        <h2 class="heading--bold">How did we do?</h2>
+        <h2 class="text--bold">How did we do?</h2>
         <p class="rating-form__description">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
@@ -90,12 +90,19 @@
         data-js="selected-dialog"
         aria-modal="true"
         aria-labelledby="selected_message"
-        ope
+        open
       >
-        <img src="./assets/images/illustration-thank-you.svg" alt="" />
-        <h2 id="selected_message">You selected <span>x</span> out of 5</h2>
-        <p>Thank you!</p>
-        <p>
+        <img
+          src="./assets/images/illustration-thank-you.svg"
+          alt=""
+          width="162"
+          height="108"
+        />
+        <h3 id="selected_message" class="dialog__selected-message">
+          You selected <span>x</span> out of 5
+        </h3>
+        <p class="text--bold">Thank you!</p>
+        <p class="dialog__description">
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
         </p>
