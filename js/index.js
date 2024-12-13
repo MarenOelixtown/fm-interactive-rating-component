@@ -11,3 +11,7 @@ ratingForm.addEventListener("submit", (event) => {
   selectedDialog.showModal();
   event.target.reset();
 });
+
+selectedDialog.addEventListener("click", () => {
+  selectedDialog.close();
+});
