@@ -18,15 +18,18 @@
       content="My Frontend Mentor - challenge is to build out this interactive rating component and get it looking as close to the design as possible."
     />
   </head>
-  <body>
+  <body class="item--center">
     <main>
       <h1 class="sr-only">Interactive rating component</h1>
       <form class="rating-form container--styling" action="" method="post">
-        <img
-          class="rating-form__star-icon"
-          src="./assets/images/icon-star.svg"
-          alt=""
-        />
+        <div class="rating-form__star-icon item--center">
+          <img
+            src="./assets/images/icon-star.svg"
+            alt=""
+            width="16.75"
+            height="16"
+          />
+        </div>
         <fieldset>
           <legend>How did we do?</legend>
           <p>
@@ -51,7 +54,7 @@
         data-js="selected-dialog"
         aria-modal="true"
         aria-labelledby="selected_message"
-        open
+        ope
       >
         <img src="./assets/images/illustration-thank-you.svg" alt="" />
         <h2 id="selected_message">You selected <span>x</span> out of 5</h2>

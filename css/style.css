@@ -50,11 +50,13 @@ body {
   min-height: 100vh;
   background-color: var(--cle-neutral-black);
   color: var(--clr-neutral-light-grey);
+}
+main {
+}
+.item--center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-main {
 }
 .container--styling {
   background: radial-gradient(
@@ -63,11 +65,16 @@ main {
     rgba(24, 30, 39, 1) 100%
   );
   border-radius: 30px;
+  padding: 2.1rem;
 }
 .rating-form {
   max-width: 25.75rem;
 }
 .rating-form__star-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--clr-neutral-dark-blue);
+  border-radius: 50%;
 }
 .dialog {
   border: none;
