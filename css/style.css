@@ -36,14 +36,6 @@ html {
   --clr-neutral-dark-blue: #252d37;
   --clr-neutral-very-dark-blue: #121417;
 }
-.sr-only {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
 body {
   font-family: var(--ff-basic);
   font-weight: var(--fw-regular);
@@ -53,10 +45,21 @@ body {
   color: var(--clr-neutral-light-grey);
 }
 
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 .item--center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mobile--aligning {
+  margin: auto 1.5rem;
 }
 .container--styling {
   background-image: radial-gradient(
@@ -66,7 +69,6 @@ body {
   );
   border-radius: 30px;
   padding: 2.1rem;
-  margin: auto 1.5rem;
 }
 .text--bold {
   color: var(--clr-neutral-white);
