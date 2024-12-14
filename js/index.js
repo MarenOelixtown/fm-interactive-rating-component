@@ -7,7 +7,7 @@ ratingForm.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  selectedRating.textContent = data.rating;
+  selectedRating.textContent = data.rating || 0;
   selectedDialog.showModal();
   event.target.reset();
 });
